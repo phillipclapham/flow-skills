@@ -30,6 +30,22 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 - **`flow-sourdough-scoping`** — commit-the-shape + adversarial review
   iteration. Self-contained SKILL.md. Proven across 9+ operational
   instances in production (April-May 2026).
+- **`flow-flowscript-encoding`** — FLOW Op 9 from Three Layers paper.
+  Semantic notation with required-field constraints forcing precision
+  while compressing density. State markers, relationship indicators,
+  confidence/urgency modifiers. Self-contained SKILL.md. Foundational
+  for other skills that use FlowScript encoding internally.
+- **`flow-web-verify-before-claiming`** — FLOW Op 20. Anti-fragility
+  pattern: verification-before-assertion at claim boundary defeats
+  confident-fabrication failure mode. Self-contained SKILL.md.
+- **`flow-drift-detection`** — FLOW Op 21. Scheduled adversarial review
+  of persistent state catches drift from reality. Companion to
+  `flow-cold-read` (fresh drafts) at accumulated-state layer. Cadence
+  is the structural defense. Self-contained SKILL.md.
+- **`flow-forever-rules`** — FLOW Op 22. Declared invariants encoded at
+  identity/foundation layer rather than context layer. Trust-breach
+  diagnostic distinguishes forever-class from context-sensitive.
+  Structural protection over discipline. Self-contained SKILL.md.
 
 ### Planned for v0.2.0+ (rolling cadence, one skill per release)
 
@@ -41,10 +57,10 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
   + session-code-review + multi-agent at boundary moments).
 - **`flow-bilateral-relay`** — cross-AI communication with decision
   artifacts not reasoning chains.
-- **`flow-pattern-graduation`** — 3x graduation logic with quality gate
-  (meta-pattern vs. surface / re-discoverable / scope-appropriate).
-- **`flow-episodic-extraction`** — structured episode capture
-  (findings/decisions/observations/connections) for any agent's session
-  end.
+
+(Operations covered by existing skills: pattern graduation + episodic
+extraction subsumed into `flow-session-wrap`. Operations 5/6/11/14/15/18
+deliberately not standalone-skilled — substrate-implementation-specific
+or meta-pattern-too-abstract for portable SKILL.md form.)
 
 [Unreleased]: https://github.com/phillipclapham/flow-skills/compare/v0.1.0...HEAD

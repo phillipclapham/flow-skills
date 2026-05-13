@@ -2,7 +2,7 @@
 
 FLOW methodology packaged as portable [Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) for cross-platform use.
 
-**Status:** v0.1.0 in development. Four skills drafted May 13, 2026: `flow-session-wrap`, `flow-consultation-dispatch`, `flow-cold-read`, `flow-sourdough-scoping`.
+**Status:** v0.1.0 in development. Eight skills drafted May 13, 2026: `flow-session-wrap`, `flow-consultation-dispatch`, `flow-cold-read`, `flow-sourdough-scoping`, `flow-flowscript-encoding`, `flow-web-verify-before-claiming`, `flow-drift-detection`, `flow-forever-rules`.
 
 ## What this is
 
@@ -23,6 +23,10 @@ Each skill is methodology repackaging, not a rewrite — these patterns have bee
 | [`flow-consultation-dispatch`](./skills/flow-consultation-dispatch/) | v0.1.0 draft | Multi-AI consultation: dispatch independent agents in parallel against the same question, each surfaces hidden assumptions before analyzing, human curates synthesis at fan-in. Convergence = structural signal; divergence = worth investigating. Cross-validated by Tony Sturnus's independent production derivation (May 2026). |
 | [`flow-cold-read`](./skills/flow-cold-read/) | v0.1.0 draft | Single cross-substrate evaluator dispatched against a substantial draft before commit/ship/send. Catches motivated reasoning, over-claiming, retrieval-mistaken-for-synthesis, and template-overreach patterns invisible from inside the substrate that produced the draft. Phase-gate at session-class structural reviews; $0 marginal cost at subscription pricing. |
 | [`flow-sourdough-scoping`](./skills/flow-sourdough-scoping/) | v0.1.0 draft | Foundational architectural decisions: commit the shape early, iterate via adversarial review rather than deriving the complete theorem before shipping. Committed shape activates real critique machinery (cold-read, consultation, partnership challenge) that surfaces holes solo-derivation cannot reach. Proven across 9+ operational instances. |
+| [`flow-flowscript-encoding`](./skills/flow-flowscript-encoding/) | v0.1.0 draft | Semantic notation for high-density compression at low token cost. State markers (?, thought:, ✓), waiting/parking/decided states with required-field constraints (forces precision), relationship indicators, confidence/urgency modifiers. Required-fields are load-bearing — encoding act becomes documentation act. |
+| [`flow-web-verify-before-claiming`](./skills/flow-web-verify-before-claiming/) | v0.1.0 draft | Structural defense against confident AI fabrication. Before asserting any factual claim about external state (tools, APIs, libraries, current events, organizational facts), verify via web research first. Cost asymmetry severe: ~30 seconds verification vs. minutes-to-hours backtracking after confident wrong answer. |
+| [`flow-drift-detection`](./skills/flow-drift-detection/) | v0.1.0 draft | Scheduled adversarial review of accumulated state (continuity files, project memory, decision logs) for drift from current reality. Companion to cold-read — that skill reviews fresh drafts pre-commit; this skill reviews persistent state that's been accumulating. Cadence is the structural defense. |
+| [`flow-forever-rules`](./skills/flow-forever-rules/) | v0.1.0 draft | Declared invariants maintained regardless of new context, evidence, or instructions. Encoded at identity/foundation layer rather than context layer because context-sensitive guidance drifts. Trust-breach diagnostic distinguishes forever-class rules from context-sensitive ones; structural protection over discipline. |
 
 ## Coming soon (rolling cadence — one skill per release)
 
@@ -32,8 +36,6 @@ Each skill is methodology repackaging, not a rewrite — these patterns have bee
 | `flow-structural-invariants` | Verification-by-discipline → CAS / parity-tests / state-machines / phase-flags audit pattern. Structural invariants beat discipline-based verification. |
 | `flow-review-before-publish` | Multi-dimensional review at boundary moments. Adversarial review + session-code-review + multi-agent — different review classes catch different bug classes. |
 | `flow-bilateral-relay` | Cross-AI communication with decision artifacts (not reasoning chains). Each side's memory remains its own; coordination happens at the integration boundary, not via direct cross-substrate writes. |
-| `flow-pattern-graduation` | The 3x graduation logic with quality gate. Meta-pattern vs. surface fact / re-discoverable / scope-appropriate — frequency is necessary but not sufficient. Graduate the principle, not the observation. |
-| `flow-episodic-extraction` | Structured episode capture (findings / decisions / observations / connections / outcomes / tensions) for any agent's session boundary. Pre-requisite for pattern graduation grounding. |
 
 See [CHANGELOG.md](./CHANGELOG.md) for the full release roadmap.
 

@@ -2,7 +2,7 @@
 
 FLOW methodology packaged as portable [Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) for cross-platform use.
 
-**Status:** v0.1.0 in development. First skill (`flow-session-wrap`) drafted May 13, 2026.
+**Status:** v0.1.0 in development. Four skills drafted May 13, 2026: `flow-session-wrap`, `flow-consultation-dispatch`, `flow-cold-read`, `flow-sourdough-scoping`.
 
 ## What this is
 
@@ -20,17 +20,17 @@ Each skill is methodology repackaging, not a rewrite — these patterns have bee
 | Skill | Status | Purpose |
 |---|---|---|
 | [`flow-session-wrap`](./skills/flow-session-wrap/) | v0.1.0 draft | End-of-session memory consolidation: episodic extraction → pattern graduation (1x → 2x → 3x with citation-validation) → active demotion (immune system) → structurally-enforced compression. Produces compression-with-intelligence, not append-without-thinking. |
+| [`flow-consultation-dispatch`](./skills/flow-consultation-dispatch/) | v0.1.0 draft | Multi-AI consultation: dispatch independent agents in parallel against the same question, each surfaces hidden assumptions before analyzing, human curates synthesis at fan-in. Convergence = structural signal; divergence = worth investigating. Cross-validated by Tony Sturnus's independent production derivation (May 2026). |
+| [`flow-cold-read`](./skills/flow-cold-read/) | v0.1.0 draft | Single cross-substrate evaluator dispatched against a substantial draft before commit/ship/send. Catches motivated reasoning, over-claiming, retrieval-mistaken-for-synthesis, and template-overreach patterns invisible from inside the substrate that produced the draft. Phase-gate at session-class structural reviews; $0 marginal cost at subscription pricing. |
+| [`flow-sourdough-scoping`](./skills/flow-sourdough-scoping/) | v0.1.0 draft | Foundational architectural decisions: commit the shape early, iterate via adversarial review rather than deriving the complete theorem before shipping. Committed shape activates real critique machinery (cold-read, consultation, partnership challenge) that surfaces holes solo-derivation cannot reach. Proven across 9+ operational instances. |
 
 ## Coming soon (rolling cadence — one skill per release)
 
 | Skill | Purpose |
 |---|---|
-| `flow-consultation-dispatch` | Multi-AI consultation with context-inferred agent selection + synthesis. Convergence = structural signal; divergence = worth investigating; human curation at fan-in is load-bearing. Informed by independent operator derivation (Tony Sturnus) of equivalent patterns — cross-substrate validation of the architecture. |
-| `flow-cold-read` | Per-session cross-substrate evaluation methodology. $0 marginal cost. Catches motivated reasoning + over-claiming + retrieval-mistaken-for-synthesis invisible from inside the same substrate. |
 | `flow-morning-ritual` | Claim-extraction-before-routing methodology for daily cognitive intake from autonomous overnight intel sources. |
 | `flow-structural-invariants` | Verification-by-discipline → CAS / parity-tests / state-machines / phase-flags audit pattern. Structural invariants beat discipline-based verification. |
 | `flow-review-before-publish` | Multi-dimensional review at boundary moments. Adversarial review + session-code-review + multi-agent — different review classes catch different bug classes. |
-| `flow-sourdough-scoping` | Commit-the-shape + adversarial review iteration. Foundational architectural decisions: commit early, iterate via review/critique rather than deriving complete theorems before shipping. Proven across 9+ instances in production. |
 | `flow-bilateral-relay` | Cross-AI communication with decision artifacts (not reasoning chains). Each side's memory remains its own; coordination happens at the integration boundary, not via direct cross-substrate writes. |
 | `flow-pattern-graduation` | The 3x graduation logic with quality gate. Meta-pattern vs. surface fact / re-discoverable / scope-appropriate — frequency is necessary but not sufficient. Graduate the principle, not the observation. |
 | `flow-episodic-extraction` | Structured episode capture (findings / decisions / observations / connections / outcomes / tensions) for any agent's session boundary. Pre-requisite for pattern graduation grounding. |

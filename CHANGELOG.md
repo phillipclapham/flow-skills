@@ -7,29 +7,38 @@ and this project follows [Semantic Versioning](https://semver.org/spec/v2.0.0.ht
 
 ## [Unreleased]
 
-### Planned for v0.1.0
+### v0.1.0 contents (drafted May 13, 2026 — pre-release)
 
-- **`flow-session-wrap`** — Ship 1. End-of-session memory update following
-  FLOW compression discipline: episodic extraction, pattern graduation,
-  immune system, structurally-enforced compression.
+- **`flow-session-wrap`** — end-of-session memory update following FLOW
+  compression discipline: episodic extraction, pattern graduation,
+  immune system, structurally-enforced compression. Includes
+  `REFERENCE.md` for full mechanics (FlowScript marker spec, continuity
+  file structure, graduation grounding rules, active demotion procedure,
+  compression guardrails, pre-commit enforcement, bilateral
+  cross-substrate integration for multi-agent setups, CLS philosophical
+  foundation).
+- **`flow-consultation-dispatch`** — multi-AI consultation with
+  hidden-assumptions discipline + convergence-divergence interpretation
+  + state-machine-tracked artifact. Includes `REFERENCE.md` (full state
+  machine spec, review-handoff vs review-process split, architectural
+  triangulation, agent selection heuristics by review class,
+  consultation file format, anti-patterns deep dive). Cross-validated
+  by Tony Sturnus's independent production derivation (May 2026).
+- **`flow-cold-read`** — single cross-substrate evaluator dispatched
+  against a substantial draft before commit/ship/send. Self-contained
+  SKILL.md (no REFERENCE.md — mechanics are conceptually simple).
+- **`flow-sourdough-scoping`** — commit-the-shape + adversarial review
+  iteration. Self-contained SKILL.md. Proven across 9+ operational
+  instances in production (April-May 2026).
 
 ### Planned for v0.2.0+ (rolling cadence, one skill per release)
 
-- **`flow-consultation-dispatch`** — multi-AI consultation with
-  context-inferred agent selection + synthesis. Informed by Tony Sturnus's
-  independently-derived `/consult` pattern (operator-class validation of
-  the underlying architecture).
-- **`flow-cold-read`** — per-session cross-substrate evaluation methodology
-  ($0 marginal cost; catches motivated reasoning invisible from inside
-  same substrate).
 - **`flow-morning-ritual`** — claim-extraction-before-routing methodology
   for daily cognitive intake from autonomous overnight intel.
 - **`flow-structural-invariants`** — verification-by-discipline →
   CAS/parity-tests/state-machines/phase-flags audit pattern.
 - **`flow-review-before-publish`** — multi-dimensional review (adversarial
   + session-code-review + multi-agent at boundary moments).
-- **`flow-sourdough-scoping`** — commit-the-shape + adversarial review
-  iteration. Proven across 9+ instances in production.
 - **`flow-bilateral-relay`** — cross-AI communication with decision
   artifacts not reasoning chains.
 - **`flow-pattern-graduation`** — 3x graduation logic with quality gate

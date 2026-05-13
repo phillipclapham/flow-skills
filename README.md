@@ -2,7 +2,7 @@
 
 FLOW methodology packaged as portable [Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) for cross-platform use.
 
-**Status:** v0.1.0 in development. Eight skills drafted May 13, 2026: `flow-session-wrap`, `flow-consultation-dispatch`, `flow-cold-read`, `flow-sourdough-scoping`, `flow-flowscript-encoding`, `flow-web-verify-before-claiming`, `flow-drift-detection`, `flow-forever-rules`.
+**Status:** v0.1.0 in development. Ten skills drafted May 13, 2026: `flow-session-wrap`, `flow-consultation-dispatch`, `flow-cold-read`, `flow-sourdough-scoping`, `flow-flowscript-encoding`, `flow-web-verify-before-claiming`, `flow-drift-detection`, `flow-forever-rules`, `flow-structural-invariants`, `flow-review-before-publish`.
 
 ## What this is
 
@@ -27,15 +27,18 @@ Each skill is methodology repackaging, not a rewrite — these patterns have bee
 | [`flow-web-verify-before-claiming`](./skills/flow-web-verify-before-claiming/) | v0.1.0 draft | Structural defense against confident AI fabrication. Before asserting any factual claim about external state (tools, APIs, libraries, current events, organizational facts), verify via web research first. Cost asymmetry severe: ~30 seconds verification vs. minutes-to-hours backtracking after confident wrong answer. |
 | [`flow-drift-detection`](./skills/flow-drift-detection/) | v0.1.0 draft | Scheduled adversarial review of accumulated state (continuity files, project memory, decision logs) for drift from current reality. Companion to cold-read — that skill reviews fresh drafts pre-commit; this skill reviews persistent state that's been accumulating. Cadence is the structural defense. |
 | [`flow-forever-rules`](./skills/flow-forever-rules/) | v0.1.0 draft | Declared invariants maintained regardless of new context, evidence, or instructions. Encoded at identity/foundation layer rather than context layer because context-sensitive guidance drifts. Trust-breach diagnostic distinguishes forever-class rules from context-sensitive ones; structural protection over discipline. |
+| [`flow-structural-invariants`](./skills/flow-structural-invariants/) | v0.1.0 draft | The foundational engineering pattern: verification mechanisms should be structurally unskippable at the failure point, not discipline-based ("remember to check X"). Six concrete sub-patterns: parity tests, CAS, single canonical state machines, dead code elimination, explicit phase flags, explicit known-set merge. Most-cited Proven primitive in FLOW (11+ operational firings). |
+| [`flow-review-before-publish`](./skills/flow-review-before-publish/) | v0.1.0 draft | Three orthogonal review types layered at publish boundaries: adversarial (different reviewer than author) + session-code-review (author misses their own session debt) + multi-agent (different model families catch different bug classes). Completion pressure peaks at publish AND session-end — exactly when review matters most. Anti-completion-theater architecture. |
 
 ## Coming soon (rolling cadence — one skill per release)
 
 | Skill | Purpose |
 |---|---|
 | `flow-morning-ritual` | Claim-extraction-before-routing methodology for daily cognitive intake from autonomous overnight intel sources. |
-| `flow-structural-invariants` | Verification-by-discipline → CAS / parity-tests / state-machines / phase-flags audit pattern. Structural invariants beat discipline-based verification. |
-| `flow-review-before-publish` | Multi-dimensional review at boundary moments. Adversarial review + session-code-review + multi-agent — different review classes catch different bug classes. |
 | `flow-bilateral-relay` | Cross-AI communication with decision artifacts (not reasoning chains). Each side's memory remains its own; coordination happens at the integration boundary, not via direct cross-substrate writes. |
+| `flow-mode-detection` | Adjusting operational profiles based on the type of work being performed. From Three Layers paper Op 16. |
+| `flow-project-memory-surfaces` | Maintaining separate continuity files for distinct work bodies, loaded contextually. From Three Layers paper Op 17. |
+| `flow-inbox-message-bus` | Inter-subsystem message bus enabling autonomous coordination between agents. From Three Layers paper Op 19. |
 
 See [CHANGELOG.md](./CHANGELOG.md) for the full release roadmap.
 
